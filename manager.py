@@ -1,26 +1,102 @@
-# manager.py
 import time
+import os
+import logging
+from dotenv import load_dotenv
+
 from monitor import TransactionMonitor
 from notifier import EmailNotifier
 
-THRESHOLD = 100
+# Load environment variables from .env file
+load_dotenv()
+
+# Failure threshold to trigger basic alerts
+THRESHOLD = int(os.getenv("FAILURE_THRESHOLD", 100))
+
+# Number of transaction types failing simultaneously to trigger "burst" alert
+BURST_THRESHOLD = 3
+
+# Multiplier to detect sudden spikes in failure count
+SPIKE_MULTIPLIER = 2
+
+# Configure basic logging output
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 def run_monitor():
     monitor = TransactionMonitor()
     notifier = EmailNotifier()
 
-    while True:
-        failed_transactions = monitor.get_failed_transactions()
-        print(f"📊 Failed Transactions: {failed_transactions}")
+    # Track previous failure counts for each transaction type
+    last_counts = {}
 
-        if failed_transactions > THRESHOLD:
-            notifier.send_alert(failed_transactions)
-        else:
-            print("✅ Transactions within safe range.")
+    logging.info("Transaction Monitor started.")
 
-        time.sleep(60)  # check every 60 seconds
+    try:
+        while True:
+            # Get all transaction types with failure count > 0
+            all_failures = monitor.get_high_failure_rows(threshold=0)
 
+            # Build a dictionary of {transaction_type: failed_count}
+            current_counts = {tx_type: count for tx_type, count in all_failures}
+
+            # --- 1. Check for types that exceed the defined threshold
+            current_high = {
+                tx_type: count for tx_type, count in current_counts.items()
+                if count > THRESHOLD
+            }
+
+            # --- 2. Check for multiple failures happening at once (burst condition)
+            if len(current_high) >= BURST_THRESHOLD:
+                logging.warning(" Multiple transaction types are failing at once!")
+
+                message = " Multiple Failures Detected:\n\n"
+                for tx_type, count in current_high.items():
+                    message += f"- {tx_type}: {count} failed\n"
+
+                notifier.send_alert(message)
+
+            # --- 3. Detect sudden spikes compared to last known counts
+            spiked = {}
+            for tx_type, count in current_counts.items():
+                if tx_type in last_counts:
+                    previous = last_counts[tx_type]
+                    if previous > 0 and count >= previous * SPIKE_MULTIPLIER:
+                        spiked[tx_type] = (previous, count)
+
+            if spiked:
+                logging.warning(" Sudden spikes detected in transaction failures.")
+
+                message = "Spike Alert: Sudden Increase in Failures\n\n"
+                for tx_type, (old, new) in spiked.items():
+                    logging.warning(f" - {tx_type}: {old} → {new}")
+                    message += f"- {tx_type}: increased from {old} to {new}\n"
+
+                notifier.send_alert(message)
+
+            # --- 4. Regular threshold breach alert
+            if current_high:
+                logging.warning(" Transactions exceeding failure threshold.")
+
+                message = " High Failed Transactions Detected:\n\n"
+                for tx_type, count in current_high.items():
+                    logging.warning(f" - {tx_type}: {count}")
+                    message += f"- {tx_type}: {count} failed\n"
+
+                notifier.send_alert(message)
+
+            # --- 5. No problems? Celebrate.
+            if not current_high and not spiked:
+                logging.info(" All transactions within safe limits.")
+
+            # Update previous counts for next iteration comparison
+            last_counts = current_counts.copy()
+
+            # Sleep for 60 seconds before next check
+            time.sleep(60)
+
+    except KeyboardInterrupt:
+        # Allow clean exit from the infinite loop
+        logging.info("Transaction Monitor stopped by user.")
+
+# Run the monitoring loop if this script is executed directly
 if __name__ == "__main__":
     run_monitor()
-# This code initializes the TransactionMonitor and EmailNotifier classes,
-# then enters a loop that checks the number of failed transactions every 60 seconds.
