@@ -1,0 +1,51 @@
+2025-07-09 15:33:08,664 - INFO - Connected to spreadsheet: 1fwN5A6z3sVLIWELRYZmmKiMv3icPp87wSKVPzghdG3Y
+2025-07-09 15:33:09,284 - INFO - Transaction Monitor started.
+2025-07-09 15:33:09,747 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 15:33:09,748 - WARNING -  - M-Pesa: 101
+2025-07-09 15:33:09,749 - WARNING -  - Bank Transfer: 101
+2025-07-09 15:33:09,749 - WARNING -  - Airtime: 101
+2025-07-09 15:33:13,938 - CRITICAL -  Transaction types with zero successful transactions:
+2025-07-09 15:33:13,938 - CRITICAL -  - M-Pesa: 0 successful
+2025-07-09 15:33:13,940 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-09 15:33:13,940 - CRITICAL -  - Airtime: 0 successful
+2025-07-09 15:34:19,168 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 15:34:19,169 - WARNING -  - M-Pesa: 101
+2025-07-09 15:34:19,170 - WARNING -  - Bank Transfer: 101
+2025-07-09 15:34:19,171 - WARNING -  - Airtime: 101
+2025-07-09 15:34:21,560 - CRITICAL -  Transaction types with zero successful transactions:
+2025-07-09 15:34:21,561 - CRITICAL -  - M-Pesa: 0 successful
+2025-07-09 15:34:21,562 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-09 15:34:21,563 - CRITICAL -  - Airtime: 0 successful
+2025-07-09 15:35:24,631 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 15:35:24,631 - WARNING -  - M-Pesa: 101
+2025-07-09 15:35:24,632 - WARNING -  - Bank Transfer: 101
+2025-07-09 15:35:24,633 - WARNING -  - Airtime: 101
+2025-07-09 15:35:27,252 - CRITICAL -  Transaction types with zero successful transactions:
+2025-07-09 15:35:27,253 - CRITICAL -  - M-Pesa: 0 successful
+2025-07-09 15:35:27,254 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-09 15:35:27,255 - CRITICAL -  - Airtime: 0 successful
+2025-07-09 15:36:30,744 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 15:36:30,745 - WARNING -  - M-Pesa: 101
+2025-07-09 15:36:30,746 - WARNING -  - Bank Transfer: 101
+2025-07-09 15:36:30,747 - WARNING -  - Airtime: 101
+2025-07-09 15:36:33,325 - CRITICAL -  Transaction types with zero successful transactions:
+2025-07-09 15:36:33,325 - CRITICAL -  - M-Pesa: 0 successful
+2025-07-09 15:36:33,326 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-09 15:36:33,327 - CRITICAL -  - Airtime: 0 successful
+2025-07-09 15:37:36,068 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 15:37:36,069 - WARNING -  - M-Pesa: 101
+2025-07-09 15:37:36,069 - WARNING -  - Bank Transfer: 101
+2025-07-09 15:37:36,070 - WARNING -  - Airtime: 101
+2025-07-09 15:37:39,174 - CRITICAL -  Transaction types with zero successful transactions:
+2025-07-09 15:37:39,174 - CRITICAL -  - M-Pesa: 0 successful
+2025-07-09 15:37:39,184 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-09 15:37:39,185 - CRITICAL -  - Airtime: 0 successful
+2025-07-09 15:38:41,684 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 15:38:41,684 - WARNING -  - M-Pesa: 101
+2025-07-09 15:38:41,684 - WARNING -  - Bank Transfer: 101
+2025-07-09 15:38:41,690 - WARNING -  - Airtime: 101
+2025-07-09 15:38:44,543 - CRITICAL -  Transaction types with zero successful transactions:
+2025-07-09 15:38:44,544 - CRITICAL -  - M-Pesa: 0 successful
+2025-07-09 15:38:44,545 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-09 15:38:44,545 - CRITICAL -  - Airtime: 0 successful
+2025-07-09 15:38:52,944 - INFO - Transaction Monitor stopped by user.

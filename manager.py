@@ -12,14 +12,23 @@ load_dotenv()
 # Failure threshold to trigger basic alerts
 THRESHOLD = int(os.getenv("FAILURE_THRESHOLD", 100))
 
-# Number of transaction types failing simultaneously to trigger "burst" alert
-BURST_THRESHOLD = 3
-
 # Multiplier to detect sudden spikes in failure count
 SPIKE_MULTIPLIER = 2
 
 # Configure basic logging output
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+from logging.handlers import RotatingFileHandler
+
+file_handler = RotatingFileHandler("transaction_monitor.log", maxBytes=1_000_000, backupCount=3)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        file_handler,
+        logging.StreamHandler()
+    ]
+)
+
 
 def run_monitor():
     monitor = TransactionMonitor()
@@ -44,17 +53,7 @@ def run_monitor():
                 if count > THRESHOLD
             }
 
-            # --- 2. Check for multiple failures happening at once (burst condition)
-            if len(current_high) >= BURST_THRESHOLD:
-                logging.warning(" Multiple transaction types are failing at once!")
-
-                message = " Multiple Failures Detected:\n\n"
-                for tx_type, count in current_high.items():
-                    message += f"- {tx_type}: {count} failed\n"
-
-                notifier.send_alert(message)
-
-            # --- 3. Detect sudden spikes compared to last known counts
+            # --- 2. Detect sudden spikes compared to last known counts
             spiked = {}
             for tx_type, count in current_counts.items():
                 if tx_type in last_counts:
@@ -63,18 +62,18 @@ def run_monitor():
                         spiked[tx_type] = (previous, count)
 
             if spiked:
-                logging.warning(" Sudden spikes detected in transaction failures.")
+                logging.warning("Sudden spikes detected in transaction failures.")
 
-                message = "Spike Alert: Sudden Increase in Failures\n\n"
+                message = " Spike Alert: Sudden Increase in Failures\n\n"
                 for tx_type, (old, new) in spiked.items():
                     logging.warning(f" - {tx_type}: {old} → {new}")
                     message += f"- {tx_type}: increased from {old} to {new}\n"
 
                 notifier.send_alert(message)
 
-            # --- 4. Regular threshold breach alert
+            # --- 3. Regular threshold breach alert
             if current_high:
-                logging.warning(" Transactions exceeding failure threshold.")
+                logging.warning("Transactions exceeding failure threshold.")
 
                 message = " High Failed Transactions Detected:\n\n"
                 for tx_type, count in current_high.items():
@@ -83,8 +82,18 @@ def run_monitor():
 
                 notifier.send_alert(message)
 
+            # --- 4. Detect transactions with 0 successful transactions
+            zero_success = monitor.get_zero_success_rows()
+            if zero_success:
+                logging.critical(" Transaction types with zero successful transactions:")
+                message = " CRITICAL: No Successful Transactions Detected\n\n"
+                for tx_type in zero_success:
+                    logging.critical(f" - {tx_type}: 0 successful")
+                    message += f"- {tx_type}: 0 successful\n"
+                notifier.send_alert(message)
+
             # --- 5. No problems? Celebrate.
-            if not current_high and not spiked:
+            if not current_high and not spiked and not zero_success:
                 logging.info(" All transactions within safe limits.")
 
             # Update previous counts for next iteration comparison
