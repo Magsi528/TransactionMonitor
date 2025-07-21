@@ -49,3 +49,406 @@
 2025-07-09 15:38:44,545 - CRITICAL -  - Bank Transfer: 0 successful
 2025-07-09 15:38:44,545 - CRITICAL -  - Airtime: 0 successful
 2025-07-09 15:38:52,944 - INFO - Transaction Monitor stopped by user.
+2025-07-09 17:03:39,207 - INFO - Connected to spreadsheet: 1fwN5A6z3sVLIWELRYZmmKiMv3icPp87wSKVPzghdG3Y
+2025-07-09 17:03:40,084 - INFO - Transaction Monitor started.
+2025-07-09 17:03:40,884 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 17:03:40,885 - WARNING -  - M-Pesa: 101
+2025-07-09 17:03:40,886 - WARNING -  - Bank Transfer: 101
+2025-07-09 17:03:40,887 - WARNING -  - Airtime: 101
+2025-07-09 17:03:45,103 - CRITICAL -  Transaction types with zero successful transactions:
+2025-07-09 17:03:45,104 - CRITICAL -  - M-Pesa: 0 successful
+2025-07-09 17:03:45,105 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-09 17:03:45,105 - CRITICAL -  - Airtime: 0 successful
+2025-07-09 17:04:48,222 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 17:04:48,223 - WARNING -  - M-Pesa: 101
+2025-07-09 17:04:48,224 - WARNING -  - Bank Transfer: 101
+2025-07-09 17:04:48,225 - WARNING -  - Airtime: 101
+2025-07-09 17:07:33,615 - INFO - Connected to spreadsheet: 1fwN5A6z3sVLIWELRYZmmKiMv3icPp87wSKVPzghdG3Y
+2025-07-09 17:07:34,502 - INFO - Transaction Monitor started.
+2025-07-09 17:07:35,404 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 17:07:35,405 - WARNING -  - M-Pesa: 101
+2025-07-09 17:07:35,408 - WARNING -  - Bank Transfer: 101
+2025-07-09 17:07:35,408 - WARNING -  - Airtime: 101
+2025-07-09 17:07:38,797 - CRITICAL -  Transaction types with zero successful transactions:
+2025-07-09 17:07:38,798 - CRITICAL -  - M-Pesa: 0 successful
+2025-07-09 17:07:38,798 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-09 17:07:38,799 - CRITICAL -  - Airtime: 0 successful
+2025-07-09 17:08:41,451 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 17:08:41,451 - WARNING -  - M-Pesa: 101
+2025-07-09 17:08:41,452 - WARNING -  - Bank Transfer: 101
+2025-07-09 17:08:41,453 - WARNING -  - Airtime: 101
+2025-07-09 17:08:44,408 - CRITICAL -  Transaction types with zero successful transactions:
+2025-07-09 17:08:44,409 - CRITICAL -  - M-Pesa: 0 successful
+2025-07-09 17:08:44,410 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-09 17:08:44,411 - CRITICAL -  - Airtime: 0 successful
+2025-07-09 17:09:48,404 - INFO -  All transactions within safe limits.
+2025-07-09 17:10:48,800 - WARNING - Sudden spikes detected in transaction failures.
+2025-07-09 17:10:50,938 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 17:10:50,940 - WARNING -  - M-Pesa: 909
+2025-07-09 17:10:50,941 - WARNING -  - Airtime: 222
+2025-07-09 17:10:53,298 - CRITICAL -  Transaction types with zero successful transactions:
+2025-07-09 17:10:53,298 - CRITICAL -  - Airtime: 0 successful
+2025-07-09 17:11:56,516 - WARNING - Transactions exceeding failure threshold.
+2025-07-09 17:11:56,516 - WARNING -  - M-Pesa: 150
+2025-07-09 17:13:02,370 - INFO -  All transactions within safe limits.
+2025-07-10 11:13:08,680 - INFO - Connected to spreadsheet: 1fwN5A6z3sVLIWELRYZmmKiMv3icPp87wSKVPzghdG3Y
+2025-07-10 11:13:09,470 - INFO - Transaction Monitor started.
+2025-07-10 11:13:11,001 - INFO - All transactions within safe limits.
+2025-07-10 11:13:46,515 - INFO - Connected to spreadsheet: 1fwN5A6z3sVLIWELRYZmmKiMv3icPp87wSKVPzghdG3Y
+2025-07-10 11:13:46,808 - INFO - Transaction Monitor started.
+2025-07-10 11:13:47,565 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:13:47,565 - WARNING -  - M-Pesa: 125
+2025-07-10 11:13:47,565 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:13:47,565 - WARNING -  - Airtime: 999999
+2025-07-10 11:15:23,747 - INFO - Connected to spreadsheet: 1fwN5A6z3sVLIWELRYZmmKiMv3icPp87wSKVPzghdG3Y
+2025-07-10 11:15:24,541 - INFO - Transaction Monitor started.
+2025-07-10 11:15:24,846 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:15:24,861 - WARNING -  - M-Pesa: 111
+2025-07-10 11:15:24,861 - WARNING -  - Airtime: 111
+2025-07-10 11:15:39,371 - INFO - Connected to spreadsheet: 1fwN5A6z3sVLIWELRYZmmKiMv3icPp87wSKVPzghdG3Y
+2025-07-10 11:15:40,174 - INFO - Transaction Monitor started.
+2025-07-10 11:15:40,935 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:15:40,936 - WARNING -  - M-Pesa: 111
+2025-07-10 11:15:40,937 - WARNING -  - Airtime: 111
+2025-07-10 11:16:42,045 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:16:42,045 - WARNING -  - M-Pesa: 111
+2025-07-10 11:16:42,045 - WARNING -  - Airtime: 111
+2025-07-10 11:17:43,198 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:17:43,199 - WARNING -  - M-Pesa: 111
+2025-07-10 11:17:43,200 - WARNING -  - Airtime: 111
+2025-07-10 11:18:44,913 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:18:44,913 - WARNING -  - M-Pesa: 111
+2025-07-10 11:18:44,914 - WARNING -  - Airtime: 111
+2025-07-10 11:19:46,031 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:19:46,031 - WARNING -  - M-Pesa: 111
+2025-07-10 11:19:46,031 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:19:46,031 - WARNING -  - Airtime: 111
+2025-07-10 11:20:49,813 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:20:49,813 - WARNING -  - M-Pesa: 111
+2025-07-10 11:20:49,813 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:20:49,813 - WARNING -  - Airtime: 111
+2025-07-10 11:21:51,405 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:21:51,406 - WARNING -  - M-Pesa: 111
+2025-07-10 11:21:51,407 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:21:51,407 - WARNING -  - Airtime: 111
+2025-07-10 11:22:53,033 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:22:53,033 - WARNING -  - M-Pesa: 111
+2025-07-10 11:22:53,033 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:22:53,033 - WARNING -  - Airtime: 111
+2025-07-10 11:23:54,286 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:23:54,286 - WARNING -  - M-Pesa: 111
+2025-07-10 11:23:54,287 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:23:54,288 - WARNING -  - Airtime: 111
+2025-07-10 11:24:55,490 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:24:55,495 - WARNING -  - M-Pesa: 111
+2025-07-10 11:24:55,526 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:24:55,533 - WARNING -  - Airtime: 111
+2025-07-10 11:25:56,735 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:25:56,736 - WARNING -  - M-Pesa: 111
+2025-07-10 11:25:56,737 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:25:56,738 - WARNING -  - Airtime: 111
+2025-07-10 11:26:57,409 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:26:57,410 - WARNING -  - M-Pesa: 111
+2025-07-10 11:26:57,411 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:26:57,412 - WARNING -  - Airtime: 111
+2025-07-10 11:27:58,578 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:27:58,579 - WARNING -  - M-Pesa: 111
+2025-07-10 11:27:58,580 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:27:58,581 - WARNING -  - Airtime: 111
+2025-07-10 11:28:59,463 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:28:59,464 - WARNING -  - M-Pesa: 111
+2025-07-10 11:28:59,465 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:28:59,466 - WARNING -  - Airtime: 111
+2025-07-10 11:30:00,605 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:30:00,606 - WARNING -  - M-Pesa: 111
+2025-07-10 11:30:00,608 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:30:00,609 - WARNING -  - Airtime: 111
+2025-07-10 11:31:01,357 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:31:01,358 - WARNING -  - M-Pesa: 111
+2025-07-10 11:31:01,359 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:31:01,360 - WARNING -  - Airtime: 111
+2025-07-10 11:32:02,609 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:32:02,610 - WARNING -  - M-Pesa: 111
+2025-07-10 11:32:02,611 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:32:02,613 - WARNING -  - Airtime: 111
+2025-07-10 11:33:03,268 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:33:03,270 - WARNING -  - M-Pesa: 111
+2025-07-10 11:33:03,271 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:33:03,272 - WARNING -  - Airtime: 111
+2025-07-10 11:34:04,149 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:34:04,149 - WARNING -  - M-Pesa: 111
+2025-07-10 11:34:04,149 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:34:04,149 - WARNING -  - Airtime: 111
+2025-07-10 11:35:04,858 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:35:04,860 - WARNING -  - M-Pesa: 111
+2025-07-10 11:35:04,860 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:35:04,861 - WARNING -  - Airtime: 111
+2025-07-10 11:55:17,315 - INFO - Connected to spreadsheet: 1fwN5A6z3sVLIWELRYZmmKiMv3icPp87wSKVPzghdG3Y
+2025-07-10 11:55:18,114 - INFO - Transaction Monitor started.
+2025-07-10 11:55:18,876 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:55:18,877 - WARNING -  - M-Pesa: 111
+2025-07-10 11:55:18,879 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:55:18,879 - WARNING -  - Airtime: 111
+2025-07-10 11:56:20,011 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:56:20,011 - WARNING -  - M-Pesa: 150
+2025-07-10 11:56:20,011 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:56:23,507 - INFO - Email sent successfully.
+2025-07-10 11:57:24,314 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:57:24,314 - WARNING -  - M-Pesa: 150
+2025-07-10 11:57:24,314 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:58:25,907 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:58:25,907 - WARNING -  - M-Pesa: 150
+2025-07-10 11:58:25,907 - WARNING -  - Bank Transfer: 112
+2025-07-10 11:59:27,629 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 11:59:27,630 - WARNING -  - M-Pesa: 150
+2025-07-10 11:59:27,632 - WARNING -  - Bank Transfer: 112
+2025-07-10 12:00:29,670 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:00:29,670 - WARNING -  - M-Pesa: 150
+2025-07-10 12:00:29,670 - WARNING -  - Bank Transfer: 112
+2025-07-10 12:01:31,351 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:01:31,351 - WARNING -  - M-Pesa: 150
+2025-07-10 12:01:31,351 - WARNING -  - Bank Transfer: 112
+2025-07-10 12:02:32,495 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:02:32,502 - WARNING -  - M-Pesa: 150
+2025-07-10 12:02:32,504 - WARNING -  - Bank Transfer: 112
+2025-07-10 12:03:33,865 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:03:33,866 - WARNING -  - M-Pesa: 150
+2025-07-10 12:03:33,867 - WARNING -  - Bank Transfer: 112
+2025-07-10 12:04:35,024 - WARNING - Sudden spikes detected in transaction failures.
+2025-07-10 12:04:35,046 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:04:35,048 - WARNING -  - M-Pesa: 200
+2025-07-10 12:04:35,048 - WARNING -  - Bank Transfer: 503
+2025-07-10 12:04:35,384 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 12:04:35,385 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 12:04:37,791 - INFO - Email sent successfully.
+2025-07-10 12:04:40,711 - INFO - Email sent successfully.
+2025-07-10 12:04:43,523 - INFO - Email sent successfully.
+2025-07-10 12:05:45,285 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 12:05:45,285 - CRITICAL -  - M-Pesa: 0 successful
+2025-07-10 12:05:45,300 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 12:05:45,300 - CRITICAL -  - Airtime: 0 successful
+2025-07-10 12:05:49,908 - INFO - Email sent successfully.
+2025-07-10 12:06:55,185 - INFO - All transactions within safe limits.
+2025-07-10 12:07:56,718 - INFO - All transactions within safe limits.
+2025-07-10 12:08:19,138 - INFO - Transaction Monitor stopped by user.
+2025-07-10 12:51:25,527 - INFO - Connected to spreadsheet: 1fwN5A6z3sVLIWELRYZmmKiMv3icPp87wSKVPzghdG3Y
+2025-07-10 12:51:26,486 - INFO - Transaction Monitor started.
+2025-07-10 12:51:26,887 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:51:26,888 - WARNING -  - M-Pesa: 500
+2025-07-10 12:51:46,527 - INFO - Email sent successfully.
+2025-07-10 12:52:47,067 - WARNING - Sudden spikes detected in transaction failures.
+2025-07-10 12:52:47,067 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:52:47,079 - WARNING -  - M-Pesa: 500
+2025-07-10 12:52:47,080 - WARNING -  - Bank Transfer: 200
+2025-07-10 12:52:47,081 - WARNING -  - Airtime: 112
+2025-07-10 12:52:58,015 - INFO - Email sent successfully.
+2025-07-10 12:53:08,309 - INFO - Email sent successfully.
+2025-07-10 12:54:09,254 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:54:09,254 - WARNING -  - M-Pesa: 500
+2025-07-10 12:54:09,254 - WARNING -  - Bank Transfer: 200
+2025-07-10 12:54:09,254 - WARNING -  - Airtime: 112
+2025-07-10 12:55:11,041 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:55:11,041 - WARNING -  - M-Pesa: 500
+2025-07-10 12:55:11,041 - WARNING -  - Bank Transfer: 200
+2025-07-10 12:55:11,041 - WARNING -  - Airtime: 112
+2025-07-10 12:56:13,396 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:56:13,396 - WARNING -  - M-Pesa: 500
+2025-07-10 12:56:13,397 - WARNING -  - Bank Transfer: 200
+2025-07-10 12:56:13,398 - WARNING -  - Airtime: 112
+2025-07-10 12:57:15,768 - WARNING - Sudden spikes detected in transaction failures.
+2025-07-10 12:57:15,791 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:57:15,791 - WARNING -  - Bank Transfer: 1000
+2025-07-10 12:57:15,792 - WARNING -  - Airtime: 300
+2025-07-10 12:57:59,825 - INFO - Email sent successfully.
+2025-07-10 12:58:21,401 - INFO - Email sent successfully.
+2025-07-10 12:59:25,855 - WARNING - Sudden spikes detected in transaction failures.
+2025-07-10 12:59:25,855 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 12:59:25,864 - WARNING -  - Bank Transfer: 300000
+2025-07-10 12:59:25,870 - WARNING -  - Airtime: 300
+2025-07-10 12:59:29,285 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 12:59:29,285 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 12:59:43,477 - ERROR - Failed to send email: Connection unexpectedly closed
+2025-07-10 13:00:12,626 - INFO - Email sent successfully.
+2025-07-10 13:00:36,164 - INFO - Email sent successfully.
+2025-07-10 13:01:37,706 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:01:37,706 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:01:37,706 - WARNING -  - Airtime: 300
+2025-07-10 13:01:39,597 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:01:39,597 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:01:48,869 - INFO - Email sent successfully.
+2025-07-10 13:02:06,894 - INFO - Email sent successfully.
+2025-07-10 13:03:08,557 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:03:08,557 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:03:08,557 - WARNING -  - Airtime: 300
+2025-07-10 13:03:09,127 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:03:09,127 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:03:28,991 - INFO - Email sent successfully.
+2025-07-10 13:03:38,922 - INFO - Email sent successfully.
+2025-07-10 13:04:41,650 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:04:41,650 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:04:41,650 - WARNING -  - Airtime: 300
+2025-07-10 13:04:43,399 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:04:43,399 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:04:55,972 - INFO - Email sent successfully.
+2025-07-10 13:05:09,785 - INFO - Email sent successfully.
+2025-07-10 13:06:11,246 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:06:11,246 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:06:11,246 - WARNING -  - Airtime: 300
+2025-07-10 13:06:11,951 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:06:11,951 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:06:23,849 - INFO - Email sent successfully.
+2025-07-10 13:06:36,134 - INFO - Email sent successfully.
+2025-07-10 13:07:37,701 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:07:37,701 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:07:37,701 - WARNING -  - Airtime: 300
+2025-07-10 13:07:38,998 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:07:38,998 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:07:54,815 - INFO - Email sent successfully.
+2025-07-10 13:08:06,972 - INFO - Email sent successfully.
+2025-07-10 13:09:08,492 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:09:08,492 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:09:08,492 - WARNING -  - Airtime: 300
+2025-07-10 13:09:11,777 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:09:11,777 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:09:24,281 - INFO - Email sent successfully.
+2025-07-10 13:09:37,448 - INFO - Email sent successfully.
+2025-07-10 13:10:38,064 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:10:38,064 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:10:38,064 - WARNING -  - Airtime: 300
+2025-07-10 13:10:42,096 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:10:42,096 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:10:52,127 - INFO - Email sent successfully.
+2025-07-10 13:11:07,989 - INFO - Email sent successfully.
+2025-07-10 13:12:09,557 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:12:09,557 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:12:09,557 - WARNING -  - Airtime: 300
+2025-07-10 13:12:10,684 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:12:10,684 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:12:22,222 - INFO - Email sent successfully.
+2025-07-10 13:12:36,295 - INFO - Email sent successfully.
+2025-07-10 13:13:37,203 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:13:37,203 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:13:37,203 - WARNING -  - Airtime: 300
+2025-07-10 13:13:37,997 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:13:37,997 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:13:50,035 - INFO - Email sent successfully.
+2025-07-10 13:14:06,264 - INFO - Email sent successfully.
+2025-07-10 13:15:08,648 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:15:08,648 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:15:08,648 - WARNING -  - Airtime: 300
+2025-07-10 13:15:12,323 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:15:12,323 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:15:22,958 - INFO - Email sent successfully.
+2025-07-10 13:15:38,015 - INFO - Email sent successfully.
+2025-07-10 13:16:38,353 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:16:38,369 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:16:38,369 - WARNING -  - Airtime: 300
+2025-07-10 13:16:38,666 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:16:38,666 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:16:41,931 - INFO - Email sent successfully.
+2025-07-10 13:16:45,414 - INFO - Email sent successfully.
+2025-07-10 13:17:46,101 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:17:46,101 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:17:46,116 - WARNING -  - Airtime: 300
+2025-07-10 13:17:47,169 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:17:47,169 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:17:57,849 - INFO - Email sent successfully.
+2025-07-10 13:18:15,911 - INFO - Email sent successfully.
+2025-07-10 13:19:16,466 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:19:16,466 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:19:16,466 - WARNING -  - Airtime: 300
+2025-07-10 13:19:16,776 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:19:16,776 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:19:21,008 - INFO - Email sent successfully.
+2025-07-10 13:19:24,916 - INFO - Email sent successfully.
+2025-07-10 13:20:25,353 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:20:25,353 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:20:25,353 - WARNING -  - Airtime: 300
+2025-07-10 13:20:25,672 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:20:25,672 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:20:30,560 - INFO - Email sent successfully.
+2025-07-10 13:20:32,945 - INFO - Email sent successfully.
+2025-07-10 13:21:33,394 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:21:33,394 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:21:33,394 - WARNING -  - Airtime: 300
+2025-07-10 13:21:33,718 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:21:33,718 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:21:41,732 - INFO - Email sent successfully.
+2025-07-10 13:21:43,998 - INFO - Email sent successfully.
+2025-07-10 13:22:44,516 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:22:44,516 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:22:44,516 - WARNING -  - Airtime: 300
+2025-07-10 13:22:44,846 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:22:44,846 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:22:47,378 - INFO - Email sent successfully.
+2025-07-10 13:22:50,488 - INFO - Email sent successfully.
+2025-07-10 13:23:50,951 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:23:50,951 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:23:50,951 - WARNING -  - Airtime: 300
+2025-07-10 13:23:51,262 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:23:51,262 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:23:54,495 - INFO - Email sent successfully.
+2025-07-10 13:23:59,321 - INFO - Email sent successfully.
+2025-07-10 13:24:59,660 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:24:59,676 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:24:59,676 - WARNING -  - Airtime: 300
+2025-07-10 13:24:59,976 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:24:59,976 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:25:03,881 - INFO - Email sent successfully.
+2025-07-10 13:25:06,187 - INFO - Email sent successfully.
+2025-07-10 13:26:06,534 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:26:06,534 - WARNING -  - Bank Transfer: 300000
+2025-07-10 13:26:06,534 - WARNING -  - Airtime: 300
+2025-07-10 13:26:06,870 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:26:06,870 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:26:09,731 - INFO - Email sent successfully.
+2025-07-10 13:26:12,783 - INFO - Email sent successfully.
+2025-07-10 13:27:14,467 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:27:14,467 - WARNING -  - Airtime: 300
+2025-07-10 13:27:18,413 - INFO - Email sent successfully.
+2025-07-10 13:28:19,148 - INFO - All transactions within safe limits.
+2025-07-10 13:29:19,885 - INFO - All transactions within safe limits.
+2025-07-10 13:30:21,484 - INFO - All transactions within safe limits.
+2025-07-10 13:31:22,611 - INFO - All transactions within safe limits.
+2025-07-10 13:32:23,914 - INFO - All transactions within safe limits.
+2025-07-10 13:33:25,553 - INFO - All transactions within safe limits.
+2025-07-10 13:34:26,262 - INFO - All transactions within safe limits.
+2025-07-10 13:35:27,013 - WARNING - Sudden spikes detected in transaction failures.
+2025-07-10 13:35:27,013 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:35:27,013 - WARNING -  - Airtime: 560
+2025-07-10 13:35:29,904 - INFO - Email sent successfully.
+2025-07-10 13:35:32,264 - INFO - Email sent successfully.
+2025-07-10 13:36:33,089 - WARNING - Sudden spikes detected in transaction failures.
+2025-07-10 13:36:33,089 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:36:33,104 - WARNING -  - Airtime: 560
+2025-07-10 13:36:33,405 - CRITICAL - Transaction types with zero successful transactions:
+2025-07-10 13:36:33,405 - CRITICAL -  - Bank Transfer: 0 successful
+2025-07-10 13:36:35,506 - INFO - Email sent successfully.
+2025-07-10 13:36:37,789 - INFO - Email sent successfully.
+2025-07-10 13:36:40,094 - INFO - Email sent successfully.
+2025-07-10 13:37:41,079 - WARNING - Sudden spikes detected in transaction failures.
+2025-07-10 13:37:41,100 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:37:41,101 - WARNING -  - Bank Transfer: 2060
+2025-07-10 13:37:41,102 - WARNING -  - Airtime: 560
+2025-07-10 13:37:43,600 - INFO - Email sent successfully.
+2025-07-10 13:37:45,896 - INFO - Email sent successfully.
+2025-07-10 13:38:46,243 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:38:46,244 - WARNING -  - Bank Transfer: 2060
+2025-07-10 13:38:46,246 - WARNING -  - Airtime: 560
+2025-07-10 13:39:47,852 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:39:47,852 - WARNING -  - Bank Transfer: 2060
+2025-07-10 13:39:47,852 - WARNING -  - Airtime: 560
+2025-07-10 13:40:48,513 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:40:48,513 - WARNING -  - Bank Transfer: 2060
+2025-07-10 13:40:48,513 - WARNING -  - Airtime: 560
+2025-07-10 13:41:49,314 - WARNING - Transactions exceeding failure threshold.
+2025-07-10 13:41:49,314 - WARNING -  - Bank Transfer: 2060
+2025-07-10 13:41:49,314 - WARNING -  - Airtime: 560
+2025-07-10 13:42:50,480 - INFO - All transactions within safe limits.
+2025-07-10 13:43:51,610 - INFO - All transactions within safe limits.
+2025-07-10 13:44:52,475 - INFO - All transactions within safe limits.
+2025-07-10 13:45:53,138 - INFO - All transactions within safe limits.
+2025-07-10 13:46:54,503 - INFO - All transactions within safe limits.
+2025-07-10 13:47:56,321 - INFO - All transactions within safe limits.
+2025-07-10 13:48:57,014 - INFO - All transactions within safe limits.
+2025-07-10 13:49:06,267 - INFO - Transaction Monitor stopped by user.

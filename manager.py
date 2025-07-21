@@ -2,9 +2,12 @@ import time
 import os
 import logging
 from dotenv import load_dotenv
-
+import csv
+from datetime import datetime
 from monitor import TransactionMonitor
 from notifier import EmailNotifier
+from logging.handlers import RotatingFileHandler
+import hashlib
 
 # Load environment variables from .env file
 load_dotenv()
@@ -16,8 +19,6 @@ THRESHOLD = int(os.getenv("FAILURE_THRESHOLD", 100))
 SPIKE_MULTIPLIER = 2
 
 # Configure basic logging output
-from logging.handlers import RotatingFileHandler
-
 file_handler = RotatingFileHandler("transaction_monitor.log", maxBytes=1_000_000, backupCount=3)
 
 logging.basicConfig(
@@ -29,6 +30,20 @@ logging.basicConfig(
     ]
 )
 
+def get_alert_hash(message):
+    return hashlib.sha256(message.encode()).hexdigest()
+
+def has_alert_been_sent(message):
+    hash_path = "last_alert_hash.txt"
+    if not os.path.exists(hash_path):
+        return False
+    with open(hash_path, "r") as f:
+        last_hash = f.read().strip()
+    return last_hash == get_alert_hash(message)
+
+def save_alert_hash(message):
+    with open("last_alert_hash.txt", "w") as f:
+        f.write(get_alert_hash(message))
 
 def run_monitor():
     monitor = TransactionMonitor()
@@ -46,6 +61,11 @@ def run_monitor():
 
             # Build a dictionary of {transaction_type: failed_count}
             current_counts = {tx_type: count for tx_type, count in all_failures}
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            with open("failure_trends.csv", mode="a", newline="") as file:
+                writer = csv.writer(file)
+                for tx_type, count in current_counts.items():
+                    writer.writerow([timestamp, tx_type, count])
 
             # --- 1. Check for types that exceed the defined threshold
             current_high = {
@@ -61,40 +81,44 @@ def run_monitor():
                     if previous > 0 and count >= previous * SPIKE_MULTIPLIER:
                         spiked[tx_type] = (previous, count)
 
+            # --- 3. Regular threshold breach alert
+            alerts_to_send = []
+
             if spiked:
                 logging.warning("Sudden spikes detected in transaction failures.")
-
-                message = " Spike Alert: Sudden Increase in Failures\n\n"
+                message = "Spike Alert: Sudden Increase in Failures\n\n"
                 for tx_type, (old, new) in spiked.items():
                     logging.warning(f" - {tx_type}: {old} → {new}")
                     message += f"- {tx_type}: increased from {old} to {new}\n"
+                alerts_to_send.append(message)
 
-                notifier.send_alert(message)
-
-            # --- 3. Regular threshold breach alert
             if current_high:
                 logging.warning("Transactions exceeding failure threshold.")
-
-                message = " High Failed Transactions Detected:\n\n"
+                message = "High Failed Transactions Detected:\n\n"
                 for tx_type, count in current_high.items():
                     logging.warning(f" - {tx_type}: {count}")
                     message += f"- {tx_type}: {count} failed\n"
-
-                notifier.send_alert(message)
+                alerts_to_send.append(message)
 
             # --- 4. Detect transactions with 0 successful transactions
             zero_success = monitor.get_zero_success_rows()
             if zero_success:
-                logging.critical(" Transaction types with zero successful transactions:")
-                message = " CRITICAL: No Successful Transactions Detected\n\n"
+                logging.critical("Transaction types with zero successful transactions:")
+                message = "CRITICAL: No Successful Transactions Detected\n\n"
                 for tx_type in zero_success:
                     logging.critical(f" - {tx_type}: 0 successful")
                     message += f"- {tx_type}: 0 successful\n"
-                notifier.send_alert(message)
+                alerts_to_send.append(message)
+
+            # --- Send alerts only if new
+            for message in alerts_to_send:
+                if not has_alert_been_sent(message):
+                    notifier.send_alert(message)
+                    save_alert_hash(message)
 
             # --- 5. No problems? Celebrate.
             if not current_high and not spiked and not zero_success:
-                logging.info(" All transactions within safe limits.")
+                logging.info("All transactions within safe limits.")
 
             # Update previous counts for next iteration comparison
             last_counts = current_counts.copy()
